@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask.logging import create_logger
 import logging
 import pandas as pd
@@ -12,17 +12,19 @@ model = LinearRegression()
 
 @app.route("/")
 def home():
-    html = "<h3>Sklearn Prediction Home</h3>"
-    return html.format(format)
+    return render_template("index.html")
 
 @app.route("/predict", methods=['POST'])
 def predict():
-    json_payload = request.json
-    LOG.info(f"JSON payload: {json_payload}")
-    LOG.info(f"JSON payload: {json_payload['day']}")
-    LOG.info(f"JSON payload: {json_payload['total']}")    
-    prediction = model.predict([[json_payload['day'], json_payload['total']]])
-    return jsonify({'prediction': prediction[0]})
+    if len(request.form) == 0:
+        json_payload = request.json
+        prediction = model.predict([[json_payload['day'], json_payload['total']]])
+        return jsonify({'prediction': prediction[0]})
+    day = request.form.get('day')
+    total = request.form.get('total')
+    prediction = model.predict([[day, total]])
+    return render_template("index.html",prediction_text=f"Predicted positive cases: {prediction[0]}")
+    
 
 if __name__ == "__main__":
     df = pd.read_csv('national-history-update.csv')

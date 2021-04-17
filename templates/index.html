@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Covid Prediction</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Covid Prediction</h1>
+  <p>This is an application for predicting covid positive number based on <a href='https://raw.githubusercontent.com/jingyi-xie/covid-prediction/main/national-history-update.csv' >National History</a></p> 
+</div>
+  
+<div class="container">
+    <form action="/predict" method="post">
+        <div class="mb-3">
+            <label for="day" class="form-label">Day</label>
+            <input class="form-control" id="day" name='day'>
+        </div>
+        <div class="mb-3">
+            <label for="total" class="form-label">Total test number</label>
+            <input class="form-control" id="total" name='total'>
+        </div>
+        <button type="submit" class="btn btn-primary">Predict</button>
+    </form>
+    <br>
+    <h4>{{ prediction_text }}</h4>
+</div>
+</body>
+</html>
