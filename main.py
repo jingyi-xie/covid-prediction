@@ -9,6 +9,10 @@ app = Flask(__name__)
 LOG = create_logger(app)
 LOG.setLevel(logging.INFO)
 model = LinearRegression()
+df = pd.read_csv('national-history-update.csv')
+X = df[['day', 'totalTestResultsIncrease']].values
+y = df['positiveIncrease'].values
+model.fit(X, y)
 
 @app.route("/")
 def home():
@@ -27,8 +31,4 @@ def predict():
     
 
 if __name__ == "__main__":
-    df = pd.read_csv('national-history-update.csv')
-    X = df[['day', 'totalTestResultsIncrease']].values
-    y = df['positiveIncrease'].values
-    model.fit(X, y)
     app.run(host='127.0.0.1', port=8080, debug=True)
