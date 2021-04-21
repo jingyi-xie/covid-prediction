@@ -2,3 +2,4 @@ Flask
 pandas
 scikit-learn
 matplotlib
+locust
