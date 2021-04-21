@@ -1,4 +1,4 @@
-# covid-prediction
+# covid prediction
 
 Deployed a flask app with Google App Engine to predict positive case number
 ![CleanShot 2021-04-20 at 21 55 27](https://user-images.githubusercontent.com/49466651/115485661-25671600-a223-11eb-954d-6006fae0fcb4.png)
