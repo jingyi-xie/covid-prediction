@@ -1,7 +1,7 @@
 # covid-prediction
 
 Deployed a flask app with Google App Engine to predict positive case number
-![CleanShot 2021-04-20 at 21 54 22](https://user-images.githubusercontent.com/49466651/115485576-023c6680-a223-11eb-98de-bf2099560277.png)
+![CleanShot 2021-04-20 at 21 55 27](https://user-images.githubusercontent.com/49466651/115485661-25671600-a223-11eb-954d-6006fae0fcb4.png)
 * Application Demo: https://covid-prediction-311000.uc.r.appspot.com
 * ML Framework: Sklearn
 * Platform: Flask + Google App Engine
