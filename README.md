@@ -1,7 +1,7 @@
 # IDS721 Final Project: Covid Prediction
 
 Deployed a flask app with Google App Engine to predict positive case number
-![CleanShot 2021-04-20 at 21 55 27](https://user-images.githubusercontent.com/49466651/115485661-25671600-a223-11eb-954d-6006fae0fcb4.png)
+![CleanShot 2021-04-20 at 22 06 08](https://user-images.githubusercontent.com/49466651/115486455-ad015480-a224-11eb-850e-4a5913e8c605.png)
 * Application Demo: https://covid-prediction-311000.uc.r.appspot.com
 * ML Framework: Sklearn
 * Platform: Flask + Google App Engine
