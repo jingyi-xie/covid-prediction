@@ -62,6 +62,5 @@ Run following command, the locust server will be running on http://0.0.0.0:8089/
 locust
 ```
 Go to the webpage, fill out the form and try to test it.  
-<img width="1279" alt="locust" src="https://user-images.githubusercontent.com/44473421/116323776-bc385300-a78c-11eb-9121-0d232eb1b064.png">
 
 ### Done!
