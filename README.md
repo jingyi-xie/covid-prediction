@@ -33,9 +33,29 @@ Run this app, the flask app will be running on http://127.0.0.1:8080/.
 ```
 python3 main.py
 ```
-You can test it from the frontend or send a POST request to this app through a bash script.  
+You can test it from the frontend website or send a POST request to the running app through a script.
+```
+bash predict-local.sh
+```
 ### Deployed this app on GCP
-
+(optional) Verfiy the current project is working. Switch your project if it's not what you want.  
+```
+gcloud projects describe $GOOGLE_CLOUD_PROJECT
+gcloud config set project $GOOGLE_CLOUD_PROJECT
+```
+Create app engine in GCP.
+```
+gcloud app create 
+```
+When it asks you to choose a region, select one(in my case is **14 us-central**). Type "yes" when it asks you to continue.  
+Deploy this app on cloud, the app will be running on the provided public url.  
+```
+gcloud app deploy
+```
+You can test it from the frontend website or send a POST request to the running app through a script. Remember to change the website address in ```predict.sh```.  
+```
+bash predict.sh
+```
 ### Test with locust
 
 ### Done!
