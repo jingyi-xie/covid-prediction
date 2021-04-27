@@ -5,7 +5,8 @@ In this project, we built a **machine learning** model to predict the number of 
 * ML Framework: Sklearn
 * Platform: Flask + Google App Engine
 * Load Test Framework: Locust
-* Dataset: https://raw.githubusercontent.com/jingyi-xie/covid-prediction/main/national-history-update.csv
+* Dataset: https://raw.githubusercontent.com/jingyi-xie/covid-prediction/main/national-history-update.csv  
+
 Here is an image of the frontend website:  
 ![CleanShot 2021-04-20 at 22 06 08](https://user-images.githubusercontent.com/49466651/115486455-ad015480-a224-11eb-850e-4a5913e8c605.png)
 Here is an image of the load test result:  
