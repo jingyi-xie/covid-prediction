@@ -1,6 +1,6 @@
 # IDS721 Final Project: Covid Prediction
 
-In this project, we built a **machine learning** model to predict the number of Covid positive cases and deployed it on **Flask**. The **Flask** app is deployed on **Google App Engine** and can be accessed through a public url. We also verified the elastic scale-Up performance via Load Test with **Locust**.
+In this project, we built a **machine learning** model to predict the number of Covid positive cases and deployed it on **Flask**. The **Flask** app is deployed on **Google App Engine** and can be accessed through a public url. We also verified the elastic scale-up performance via Load Test with **Locust**.
 * Application Deployed on: https://covid-prediction-311000.uc.r.appspot.com
 * ML Framework: Sklearn
 * Platform: Flask + Google App Engine
@@ -56,6 +56,10 @@ You can test it from the frontend website or send a POST request to the running 
 ```
 bash predict.sh
 ```
-### Test with locust
-
+### Load Test with locust
+Run following command, the locust server will be running on http://127.0.0.1:8089/.  
+```
+locust
+```
+Go to the webpage, fill out the form and try to test it.  
 ### Done!
