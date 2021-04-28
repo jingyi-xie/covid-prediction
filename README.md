@@ -41,7 +41,7 @@ You can test it from the frontend website or send a POST request to the running 
 ```
 bash predict-local.sh
 ```
-### Deployed this app on GCP
+### Deploy this app on GCP
 (optional) Verfiy the current project is working. Switch your project if it's not what you want.  
 ```
 gcloud projects describe $GOOGLE_CLOUD_PROJECT
