@@ -1,5 +1,6 @@
 # IDS721 Final Project: Covid Prediction
 
+## Overview
 In this project, we built a **machine learning** model to predict the number of Covid positive cases and deployed it on **Flask**. The **Flask** app is deployed on **Google App Engine** and can be accessed through a public url. We also verified the elastic scale-up performance via Load Test with **Locust**.
 * Application Deployed on: https://covid-prediction-311000.uc.r.appspot.com
 * ML Framework: Sklearn
